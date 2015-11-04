@@ -1,0 +1,328 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {doDone = id; doSlider = id; handleImageMenu = id; }; 
+            CLASS = AlphaPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                imageController = ImageController; 
+                imageMenu = NSPopUpButton; 
+                okButton = NSButton; 
+                transparencySliderBottom = NSSlider; 
+                transparencySliderTop = NSSlider; 
+                valueDisplayBottom = NSTextField; 
+                valueDisplayTop = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {CLASS = FilterTest; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                applyFilter = id; 
+                setDataType = id; 
+                setFilterType = id; 
+                setIterationCount = id; 
+                timingTest = id; 
+            }; 
+            CLASS = FilterTestController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alphaPane = AlphaPane; 
+                conversionType = NSTextField; 
+                functionMenu = FunctionMenu; 
+                functionPane = FunctionPane; 
+                geometryPane = GeometryPane; 
+                goButton = NSButton; 
+                hsbPane = HSBPane; 
+                imageController = ImageController; 
+                kernelPane = KernelPane; 
+                menuInterleaved8 = NSMenuItem; 
+                menuInterleavedF = NSMenuItem; 
+                menuPlanar8 = NSMenuItem; 
+                menuPlanarF = NSMenuItem; 
+                paramsController = ParamsController; 
+                progressBar = NSProgressIndicator; 
+                testIterations = NSTextField; 
+                testStatus = NSTextField; 
+                theWindow = NSWindow; 
+                timeDisplayField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {doTrace = id; useVector = id; }; 
+            CLASS = FunctionMenu; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {imageController = ImageController; }; 
+            SUPERCLASS = NSMenu; 
+        }, 
+        {
+            ACTIONS = {hitOK = id; }; 
+            CLASS = FunctionPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {OK = NSButton; kernelWidth = NSStepper; textBox = NSTextField; }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            ACTIONS = {go = id; updateTransformMatrix = id; }; 
+            CLASS = GeometryPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                goButton = NSButton; 
+                imageController = ImageController; 
+                paramsController = ParamsController; 
+                rotate = NSSlider; 
+                "scale_X" = NSSlider; 
+                "scale_Y" = NSSlider; 
+                "shear_X" = NSSlider; 
+                "shear_Y" = NSSlider; 
+                transformMatrix = NSTableView; 
+                "translate_X" = NSSlider; 
+                "translate_Y" = NSSlider; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            ACTIONS = {changeMatrix = id; go = id; }; 
+            CLASS = HSBPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                brightnessSlider = NSSlider; 
+                brightnessText = NSTextField; 
+                contrastSlider = NSSlider; 
+                contrastText = NSTextField; 
+                goButton = NSButton; 
+                hueSlider = NSSlider; 
+                hueText = NSTextField; 
+                imageController = ImageController; 
+                paramsController = ParamsController; 
+                saturationSlider = NSSlider; 
+                saturationText = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            CLASS = HidableProgressBar; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSProgressIndicator; 
+        }, 
+        {
+            ACTIONS = {
+                applyFilter = id; 
+                findImage = id; 
+                handleImageButtons = id; 
+                newWindow = id; 
+                setDataType = id; 
+                setFilterType = id; 
+                setIterationCount = id; 
+                timingTest = id; 
+            }; 
+            CLASS = ImageController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alphaPane = AlphaPane; 
+                conversionType = NSTextField; 
+                functionMenu = FunctionMenu; 
+                geometryPane = GeometryPane; 
+                goButton = NSButton; 
+                hsbPane = HSBPane; 
+                imageButton0 = NSButton; 
+                imageButton1 = NSButton; 
+                imageButton2 = NSButton; 
+                imageButton3 = NSButton; 
+                imageButton4 = NSButton; 
+                kernelPane = KernelPane; 
+                menuInterleaved8 = NSMenuItem; 
+                menuInterleavedF = NSMenuItem; 
+                menuPlanar8 = NSMenuItem; 
+                menuPlanarF = NSMenuItem; 
+                paramsController = ParamsController; 
+                progressBar = NSProgressIndicator; 
+                testStatus = NSTextField; 
+                timeDisplayField = NSTextField; 
+                transformPane = TransformPane; 
+            }; 
+            SUPERCLASS = ViewController; 
+        }, 
+        {CLASS = Kernel; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                applyChanges = id; 
+                cancelChanges = id; 
+                setIntOrFloat = id; 
+                setPrefabType = id; 
+                setSize = id; 
+            }; 
+            CLASS = KernelPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                FPText = NSTextField; 
+                applyButton = NSButton; 
+                cancelButton = NSButton; 
+                controller = ImageController; 
+                intText = NSTextField; 
+                kernelData = NSTableView; 
+                kernelPrefabType = NSPopUpButton; 
+                kernelSize = NSForm; 
+                parameters = ParamsController; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            CLASS = MyImage; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {drawingSurface = NSImageView; }; 
+            SUPERCLASS = NSImage; 
+        }, 
+        {
+            CLASS = MyImageFilterView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {sizeOfDisplay = NSTextField; }; 
+            SUPERCLASS = NSImageView; 
+        }, 
+        {
+            ACTIONS = {
+                DoDisplayTiming = id; 
+                DoEdgeStyle = id; 
+                DoFPMaximum = id; 
+                DoFPMinimum = id; 
+                DoShark = id; 
+                changeColor = id; 
+                display = id; 
+                doBackgroundColor = id; 
+                doContrastStretchHigh = id; 
+                doContrastStretchLow = id; 
+                doHistogramEntries = id; 
+                doIterationsPerCall = id; 
+                doLeaveAlphaUnchanged = id; 
+                doReadIterations = id; 
+                doSigmaValue = id; 
+                doSpecificationTable = id; 
+                doSrcOffsetX = id; 
+                doSrcOffsetY = id; 
+                doTable = id; 
+                doTiling = id; 
+                doUseTemporaryBuffers = id; 
+                hitOK = id; 
+            }; 
+            CLASS = ParametersPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                BGColorAlpha = NSTextField; 
+                BGColorBlue = NSTextField; 
+                BGColorGreen = NSTextField; 
+                BGColorRed = NSTextField; 
+                ContrastStretchHigh = NSTextField; 
+                ContrastStretchLow = NSTextField; 
+                DisplayTiming = NSButton; 
+                FPMaximum = NSTextField; 
+                FPMinimum = NSTextField; 
+                HistogramEntries = NSTextField; 
+                IterationsPerCall = NSTextField; 
+                LeaveAlphaUnchanged = NSButton; 
+                ReadIterations = NSTextField; 
+                Shark = NSButton; 
+                SigmaValue = NSTextField; 
+                SrcOffsetX = NSTextField; 
+                SrcOffsetY = NSTextField; 
+                Tiling = NSButton; 
+                UseTemporaryBuffers = NSButton; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            ACTIONS = {
+                DoDisplayTiming = id; 
+                DoShark = id; 
+                changeColor = id; 
+                display = id; 
+                doBackgroundColor = id; 
+                doBias = id; 
+                doContrastStretchHigh = id; 
+                doContrastStretchLow = id; 
+                doEdgeStyle = id; 
+                doFPMaximum = id; 
+                doFPMinimum = id; 
+                doHistogramEntries = id; 
+                doIterationsPerCall = id; 
+                doLeaveAlphaUnchanged = id; 
+                doReadIterations = id; 
+                doScalarForOverwrite = id; 
+                doSigmaValue = id; 
+                doSpecificationTable = id; 
+                doSrcOffsetX = id; 
+                doSrcOffsetY = id; 
+                doTable = id; 
+                doTiling = id; 
+                doUseTemporaryBuffers = id; 
+                dodestOverwrite = id; 
+                dosourceOverwrite = id; 
+                hitOK = id; 
+            }; 
+            CLASS = ParamsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                BGColorAlpha = id; 
+                BGColorBlue = id; 
+                BGColorGreen = id; 
+                BGColorRed = id; 
+                BiasAlpha = id; 
+                BiasBlue = id; 
+                BiasGreen = id; 
+                BiasRed = id; 
+                ContrastStretchHigh = id; 
+                ContrastStretchLow = id; 
+                DisplayTiming = id; 
+                DoTiling = id; 
+                FPMaximum = id; 
+                FPMinimum = id; 
+                HistogramEntries = id; 
+                LeaveAlphaUnchanged = id; 
+                ParamsWindow = id; 
+                RLDIterationsPerCall = id; 
+                RLDSigma = id; 
+                ReadIterations = id; 
+                ScalarForOverwrite = id; 
+                SharkRemoteMonitoring = id; 
+                SrcOffsetX = id; 
+                SrcOffsetY = id; 
+                UseTemporaryBuffers = id; 
+                destOverwrite = id; 
+                sourceOverwrite = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ProgressController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myOutlet = id; progressBar = NSProgressIndicator; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TimingTest; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {doDone = id; doGammaType = id; doSlider = id; }; 
+            CLASS = TransformPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                exponentSlider = NSSlider; 
+                gammaMenu = NSPopUpButton; 
+                imageController = ImageController; 
+                valueDisplay = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            ACTIONS = {saveImage = id; }; 
+            CLASS = ViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                imageSizeDisplayField = NSTextField; 
+                imageView = NSImageView; 
+                infoDisplayField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

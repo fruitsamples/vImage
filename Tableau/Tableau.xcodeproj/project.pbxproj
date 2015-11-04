@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3B79EF8F0AFFCDD6000C5273 /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3B79EF990AFFCE4B000C5273 /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			comments = "If this fails, try just building the 32-bit Tableau.";
+			dependencies = (
+				3B79EF910AFFCDE2000C5273 /* PBXTargetDependency */,
+				3B79EF930AFFCDE6000C5273 /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3B79EF630AFFCD85000C5273 /* Tableau_prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F83A4B2067F3CDB0000C24B /* Tableau_prefix.h */; };
+		3B79EF640AFFCD85000C5273 /* TransformPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9792EB0872078A00784EF8 /* TransformPane.h */; };
+		3B79EF650AFFCD85000C5273 /* AlphaFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9DCE51089E9E8600C967A2 /* AlphaFilters.h */; };
+		3B79EF680AFFCD85000C5273 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1DA9850689F53400FABA2C /* MainMenu.nib */; };
+		3B79EF690AFFCD85000C5273 /* ViewWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 84F073C507B4657400AE924D /* ViewWindow.nib */; };
+		3B79EF6B0AFFCD85000C5273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EFEE05DD83E6009F39F7 /* main.m */; };
+		3B79EF6C0AFFCD85000C5273 /* ConvolutionFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3105DD81BB009F39F7 /* ConvolutionFilters.m */; };
+		3B79EF6D0AFFCD85000C5273 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3305DD81BB009F39F7 /* Filters.m */; };
+		3B79EF6E0AFFCD85000C5273 /* FunctionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEF605DD8192009F39F7 /* FunctionMenu.m */; };
+		3B79EF6F0AFFCD85000C5273 /* FunctionPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEF805DD8192009F39F7 /* FunctionPane.m */; };
+		3B79EF700AFFCD85000C5273 /* GeometryFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3505DD81BB009F39F7 /* GeometryFilters.m */; };
+		3B79EF710AFFCD85000C5273 /* GeometryPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEFA05DD8192009F39F7 /* GeometryPane.m */; };
+		3B79EF720AFFCD85000C5273 /* HistogramFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3805DD81BB009F39F7 /* HistogramFilters.m */; };
+		3B79EF730AFFCD85000C5273 /* Kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF0005DD8192009F39F7 /* Kernel.m */; };
+		3B79EF740AFFCD85000C5273 /* KernelPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF0205DD8192009F39F7 /* KernelPane.m */; };
+		3B79EF750AFFCD85000C5273 /* MiscFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3B05DD81BB009F39F7 /* MiscFilters.m */; };
+		3B79EF760AFFCD85000C5273 /* MorphologyFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3E05DD81BB009F39F7 /* MorphologyFilters.m */; };
+		3B79EF770AFFCD85000C5273 /* HSBPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B90C1DF06227A7B00C6DB46 /* HSBPane.m */; };
+		3B79EF780AFFCD85000C5273 /* ParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86FB9C0712139900AA53B3 /* ParamsController.m */; };
+		3B79EF790AFFCD85000C5273 /* RichardsonLucy.m in Sources */ = {isa = PBXBuildFile; fileRef = C426F422075BF99400D5AE11 /* RichardsonLucy.m */; };
+		3B79EF7A0AFFCD85000C5273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B3B3307AB06F200962EBA /* ViewController.m */; };
+		3B79EF7B0AFFCD85000C5273 /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FDD1080C7AD000F710EC /* ImageController.m */; };
+		3B79EF7C0AFFCD85000C5273 /* TimingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FE50080DA56400F710EC /* TimingTest.m */; };
+		3B79EF7D0AFFCD85000C5273 /* FilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F34F718081427B900EF7F28 /* FilterTest.m */; };
+		3B79EF7E0AFFCD85000C5273 /* ConversionFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF2D05DD81BB009F39F7 /* ConversionFilters.m */; };
+		3B79EF7F0AFFCD85000C5273 /* AlphaPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF473330854E5AE00D76278 /* AlphaPane.m */; };
+		3B79EF800AFFCD85000C5273 /* TransformPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9792EC0872078A00784EF8 /* TransformPane.m */; };
+		3B79EF810AFFCD85000C5273 /* AlphaFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9DCE52089E9E8600C967A2 /* AlphaFilters.m */; };
+		3B79EF830AFFCD85000C5273 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		3B79EF8B0AFFCDAC000C5273 /* Tableau-Info (64-bit).plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B79EF8A0AFFCD85000C5273 /* Tableau-Info (64-bit).plist */; };
+		3B90C1E106227A7B00C6DB46 /* HSBPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B90C1DF06227A7B00C6DB46 /* HSBPane.m */; };
+		3F1DA9870689F53400FABA2C /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3F1DA9850689F53400FABA2C /* MainMenu.nib */; };
+		3F3105B308479B6C00BEDBBD /* ConversionFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF2D05DD81BB009F39F7 /* ConversionFilters.m */; };
+		3F34F71A081427B900EF7F28 /* FilterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F34F718081427B900EF7F28 /* FilterTest.m */; };
+		3F64FDD2080C7AD000F710EC /* ImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FDD1080C7AD000F710EC /* ImageController.m */; };
+		3F64FE51080DA56400F710EC /* TimingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F64FE50080DA56400F710EC /* TimingTest.m */; };
+		3F83A4B3067F3CDB0000C24B /* Tableau_prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F83A4B2067F3CDB0000C24B /* Tableau_prefix.h */; };
+		3F86FB9D0712139900AA53B3 /* ParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86FB9C0712139900AA53B3 /* ParamsController.m */; };
+		3F9792ED0872078A00784EF8 /* TransformPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9792EB0872078A00784EF8 /* TransformPane.h */; };
+		3F9792EE0872078A00784EF8 /* TransformPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9792EC0872078A00784EF8 /* TransformPane.m */; };
+		3F9B3B3507AB06F200962EBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B3B3307AB06F200962EBA /* ViewController.m */; };
+		3F9DCE53089E9E8600C967A2 /* AlphaFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9DCE51089E9E8600C967A2 /* AlphaFilters.h */; };
+		3F9DCE54089E9E8600C967A2 /* AlphaFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9DCE52089E9E8600C967A2 /* AlphaFilters.m */; };
+		3FB1B3A205EFBE3400C55A88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EFEE05DD83E6009F39F7 /* main.m */; };
+		3FB1B3AA05EFBE5C00C55A88 /* ConvolutionFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3105DD81BB009F39F7 /* ConvolutionFilters.m */; };
+		3FB1B3AD05EFBE7200C55A88 /* Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3305DD81BB009F39F7 /* Filters.m */; };
+		3FB1B3AF05EFBE7D00C55A88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		3FB1B3B005EFBE8500C55A88 /* FunctionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEF605DD8192009F39F7 /* FunctionMenu.m */; };
+		3FB1B3B105EFBE8900C55A88 /* FunctionPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEF805DD8192009F39F7 /* FunctionPane.m */; };
+		3FB1B3B205EFBE8A00C55A88 /* GeometryFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3505DD81BB009F39F7 /* GeometryFilters.m */; };
+		3FB1B3B305EFBE8D00C55A88 /* GeometryPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EEFA05DD8192009F39F7 /* GeometryPane.m */; };
+		3FB1B3B405EFBE9100C55A88 /* HistogramFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3805DD81BB009F39F7 /* HistogramFilters.m */; };
+		3FB1B3B605EFBE9600C55A88 /* Kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF0005DD8192009F39F7 /* Kernel.m */; };
+		3FB1B3B705EFBE9900C55A88 /* KernelPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF0205DD8192009F39F7 /* KernelPane.m */; };
+		3FB1B3B805EFBEA100C55A88 /* MiscFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3B05DD81BB009F39F7 /* MiscFilters.m */; };
+		3FB1B3B905EFBEA500C55A88 /* MorphologyFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F91EF3E05DD81BB009F39F7 /* MorphologyFilters.m */; };
+		3FB1B3BB05EFBEAE00C55A88 /* Tableau-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB049405EA6F60008B1895 /* Tableau-Info.plist */; };
+		3FF473340854E5AE00D76278 /* AlphaPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF473330854E5AE00D76278 /* AlphaPane.m */; };
+		84F073C707B4657400AE924D /* ViewWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 84F073C507B4657400AE924D /* ViewWindow.nib */; };
+		C426F424075BF99400D5AE11 /* RichardsonLucy.m in Sources */ = {isa = PBXBuildFile; fileRef = C426F422075BF99400D5AE11 /* RichardsonLucy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B79EF900AFFCDE2000C5273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FFB049105EA6F60008B1895;
+			remoteInfo = Tableau;
+		};
+		3B79EF920AFFCDE6000C5273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B79EF610AFFCD85000C5273;
+			remoteInfo = "Tableau (64-bit)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3B1CC69C0B6942D80001529B /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.xml; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B79EF880AFFCD85000C5273 /* Tableau64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tableau64.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B79EF8A0AFFCD85000C5273 /* Tableau-Info (64-bit).plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tableau-Info (64-bit).plist"; sourceTree = "<group>"; };
+		3B90C1DF06227A7B00C6DB46 /* HSBPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HSBPane.m; path = Source/Objects/HSBPane.m; sourceTree = SOURCE_ROOT; };
+		3B90C1E006227A7B00C6DB46 /* HSBPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HSBPane.h; path = Source/Objects/HSBPane.h; sourceTree = SOURCE_ROOT; };
+		3F1DA9860689F53400FABA2C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		3F34F717081427B900EF7F28 /* FilterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilterTest.h; path = Source/Objects/FilterTest.h; sourceTree = "<group>"; };
+		3F34F718081427B900EF7F28 /* FilterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilterTest.m; path = Source/Objects/FilterTest.m; sourceTree = "<group>"; };
+		3F64FDD1080C7AD000F710EC /* ImageController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ImageController.m; path = Source/Objects/ImageController.m; sourceTree = "<group>"; };
+		3F64FE50080DA56400F710EC /* TimingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimingTest.m; path = Source/Objects/TimingTest.m; sourceTree = "<group>"; };
+		3F64FFB0081070F800F710EC /* TimingTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TimingTest.h; path = Source/Objects/TimingTest.h; sourceTree = "<group>"; };
+		3F83A4B2067F3CDB0000C24B /* Tableau_prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Tableau_prefix.h; path = Source/Tableau_prefix.h; sourceTree = "<group>"; };
+		3F86FB9C0712139900AA53B3 /* ParamsController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ParamsController.m; path = Source/Objects/ParamsController.m; sourceTree = "<group>"; };
+		3F91EEEF05DD8192009F39F7 /* AlphaPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AlphaPane.h; path = Source/Objects/AlphaPane.h; sourceTree = SOURCE_ROOT; };
+		3F91EEF505DD8192009F39F7 /* FunctionMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FunctionMenu.h; path = Source/Objects/FunctionMenu.h; sourceTree = SOURCE_ROOT; };
+		3F91EEF605DD8192009F39F7 /* FunctionMenu.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FunctionMenu.m; path = Source/Objects/FunctionMenu.m; sourceTree = SOURCE_ROOT; };
+		3F91EEF705DD8192009F39F7 /* FunctionPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FunctionPane.h; path = Source/Objects/FunctionPane.h; sourceTree = SOURCE_ROOT; };
+		3F91EEF805DD8192009F39F7 /* FunctionPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FunctionPane.m; path = Source/Objects/FunctionPane.m; sourceTree = SOURCE_ROOT; };
+		3F91EEF905DD8192009F39F7 /* GeometryPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GeometryPane.h; path = Source/Objects/GeometryPane.h; sourceTree = SOURCE_ROOT; };
+		3F91EEFA05DD8192009F39F7 /* GeometryPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GeometryPane.m; path = Source/Objects/GeometryPane.m; sourceTree = SOURCE_ROOT; };
+		3F91EEFB05DD8192009F39F7 /* ImageController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ImageController.h; path = Source/Objects/ImageController.h; sourceTree = SOURCE_ROOT; };
+		3F91EEFF05DD8192009F39F7 /* Kernel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Kernel.h; path = Source/Objects/Kernel.h; sourceTree = SOURCE_ROOT; };
+		3F91EF0005DD8192009F39F7 /* Kernel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Kernel.m; path = Source/Objects/Kernel.m; sourceTree = SOURCE_ROOT; };
+		3F91EF0105DD8192009F39F7 /* KernelPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = KernelPane.h; path = Source/Objects/KernelPane.h; sourceTree = SOURCE_ROOT; };
+		3F91EF0205DD8192009F39F7 /* KernelPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = KernelPane.m; path = Source/Objects/KernelPane.m; sourceTree = SOURCE_ROOT; };
+		3F91EF2D05DD81BB009F39F7 /* ConversionFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ConversionFilters.m; path = Source/Filters/ConversionFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF2E05DD81BB009F39F7 /* ConversionFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ConversionFilters.h; path = Source/Filters/ConversionFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3005DD81BB009F39F7 /* ConvolutionFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ConvolutionFilters.h; path = Source/Filters/ConvolutionFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3105DD81BB009F39F7 /* ConvolutionFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ConvolutionFilters.m; path = Source/Filters/ConvolutionFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF3205DD81BB009F39F7 /* Filters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Filters.h; path = Source/Filters/Filters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3305DD81BB009F39F7 /* Filters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = Filters.m; path = Source/Filters/Filters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF3405DD81BB009F39F7 /* GeometryFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GeometryFilters.h; path = Source/Filters/GeometryFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3505DD81BB009F39F7 /* GeometryFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GeometryFilters.m; path = Source/Filters/GeometryFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF3705DD81BB009F39F7 /* HistogramFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HistogramFilters.h; path = Source/Filters/HistogramFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3805DD81BB009F39F7 /* HistogramFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HistogramFilters.m; path = Source/Filters/HistogramFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF3A05DD81BB009F39F7 /* MiscFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MiscFilters.h; path = Source/Filters/MiscFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3B05DD81BB009F39F7 /* MiscFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MiscFilters.m; path = Source/Filters/MiscFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EF3D05DD81BB009F39F7 /* MorphologyFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MorphologyFilters.h; path = Source/Filters/MorphologyFilters.h; sourceTree = SOURCE_ROOT; };
+		3F91EF3E05DD81BB009F39F7 /* MorphologyFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MorphologyFilters.m; path = Source/Filters/MorphologyFilters.m; sourceTree = SOURCE_ROOT; };
+		3F91EFEA05DD83D6009F39F7 /* MyTimes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyTimes.h; path = Source/MyTimes.h; sourceTree = SOURCE_ROOT; };
+		3F91EFEE05DD83E6009F39F7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
+		3F9792EB0872078A00784EF8 /* TransformPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TransformPane.h; path = Source/Objects/TransformPane.h; sourceTree = "<group>"; };
+		3F9792EC0872078A00784EF8 /* TransformPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TransformPane.m; path = Source/Objects/TransformPane.m; sourceTree = "<group>"; };
+		3F9B3B3207AB06F200962EBA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Source/Objects/ViewController.h; sourceTree = "<group>"; };
+		3F9B3B3307AB06F200962EBA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Source/Objects/ViewController.m; sourceTree = "<group>"; };
+		3F9DCE51089E9E8600C967A2 /* AlphaFilters.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AlphaFilters.h; path = Source/Filters/AlphaFilters.h; sourceTree = "<group>"; };
+		3F9DCE52089E9E8600C967A2 /* AlphaFilters.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AlphaFilters.m; path = Source/Filters/AlphaFilters.m; sourceTree = "<group>"; };
+		3FA46BF307136F4000CFDAA9 /* ParamsController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ParamsController.h; path = Source/Objects/ParamsController.h; sourceTree = "<group>"; };
+		3FE1096D05DD9CFD0058FB86 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FF473330854E5AE00D76278 /* AlphaPane.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AlphaPane.m; path = Source/Objects/AlphaPane.m; sourceTree = "<group>"; };
+		3FFB049205EA6F60008B1895 /* Tableau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tableau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFB049405EA6F60008B1895 /* Tableau-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tableau-Info.plist"; sourceTree = SOURCE_ROOT; };
+		84F073C607B4657400AE924D /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ViewWindow.nib; sourceTree = "<group>"; };
+		C426F421075BF99400D5AE11 /* RichardsonLucy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RichardsonLucy.h; path = Source/Filters/RichardsonLucy.h; sourceTree = "<group>"; };
+		C426F422075BF99400D5AE11 /* RichardsonLucy.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = RichardsonLucy.m; path = Source/Filters/RichardsonLucy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B79EF820AFFCD85000C5273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B79EF830AFFCD85000C5273 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFB049005EA6F60008B1895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB1B3AF05EFBE7D00C55A88 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3F9792EB0872078A00784EF8 /* TransformPane.h */,
+				3F9792EC0872078A00784EF8 /* TransformPane.m */,
+				3F91EEEF05DD8192009F39F7 /* AlphaPane.h */,
+				3FF473330854E5AE00D76278 /* AlphaPane.m */,
+				3F34F717081427B900EF7F28 /* FilterTest.h */,
+				3F34F718081427B900EF7F28 /* FilterTest.m */,
+				3F91EEF505DD8192009F39F7 /* FunctionMenu.h */,
+				3F91EEF605DD8192009F39F7 /* FunctionMenu.m */,
+				3F91EEF705DD8192009F39F7 /* FunctionPane.h */,
+				3F91EEF805DD8192009F39F7 /* FunctionPane.m */,
+				3F91EEF905DD8192009F39F7 /* GeometryPane.h */,
+				3F91EEFA05DD8192009F39F7 /* GeometryPane.m */,
+				3F9B3B3207AB06F200962EBA /* ViewController.h */,
+				3F9B3B3307AB06F200962EBA /* ViewController.m */,
+				3F91EEFB05DD8192009F39F7 /* ImageController.h */,
+				3F64FDD1080C7AD000F710EC /* ImageController.m */,
+				3F64FFB0081070F800F710EC /* TimingTest.h */,
+				3F64FE50080DA56400F710EC /* TimingTest.m */,
+				3FA46BF307136F4000CFDAA9 /* ParamsController.h */,
+				3F86FB9C0712139900AA53B3 /* ParamsController.m */,
+				3F91EEFF05DD8192009F39F7 /* Kernel.h */,
+				3F91EF0005DD8192009F39F7 /* Kernel.m */,
+				3F91EF0105DD8192009F39F7 /* KernelPane.h */,
+				3F91EF0205DD8192009F39F7 /* KernelPane.m */,
+				3B90C1DF06227A7B00C6DB46 /* HSBPane.m */,
+				3B90C1E006227A7B00C6DB46 /* HSBPane.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FFB049205EA6F60008B1895 /* Tableau.app */,
+				3B79EF880AFFCD85000C5273 /* Tableau64.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Tableau2 */ = {
+			isa = PBXGroup;
+			children = (
+				3F83A4B2067F3CDB0000C24B /* Tableau_prefix.h */,
+				3F91EFEE05DD83E6009F39F7 /* main.m */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				3FFB049405EA6F60008B1895 /* Tableau-Info.plist */,
+				3B79EF8A0AFFCD85000C5273 /* Tableau-Info (64-bit).plist */,
+			);
+			name = Tableau2;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3F91EFEA05DD83D6009F39F7 /* MyTimes.h */,
+				3F9DCE51089E9E8600C967A2 /* AlphaFilters.h */,
+				3F9DCE52089E9E8600C967A2 /* AlphaFilters.m */,
+				3F91EF2E05DD81BB009F39F7 /* ConversionFilters.h */,
+				3F91EF2D05DD81BB009F39F7 /* ConversionFilters.m */,
+				3F91EF3005DD81BB009F39F7 /* ConvolutionFilters.h */,
+				3F91EF3105DD81BB009F39F7 /* ConvolutionFilters.m */,
+				3F91EF3205DD81BB009F39F7 /* Filters.h */,
+				3F91EF3305DD81BB009F39F7 /* Filters.m */,
+				3F91EF3405DD81BB009F39F7 /* GeometryFilters.h */,
+				3F91EF3505DD81BB009F39F7 /* GeometryFilters.m */,
+				3F91EF3705DD81BB009F39F7 /* HistogramFilters.h */,
+				3F91EF3805DD81BB009F39F7 /* HistogramFilters.m */,
+				3F91EF3A05DD81BB009F39F7 /* MiscFilters.h */,
+				3F91EF3B05DD81BB009F39F7 /* MiscFilters.m */,
+				3F91EF3D05DD81BB009F39F7 /* MorphologyFilters.h */,
+				3F91EF3E05DD81BB009F39F7 /* MorphologyFilters.m */,
+				C426F421075BF99400D5AE11 /* RichardsonLucy.h */,
+				C426F422075BF99400D5AE11 /* RichardsonLucy.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B1CC69B0B6942D80001529B /* InfoPlist.strings */,
+				84F073C507B4657400AE924D /* ViewWindow.nib */,
+				3F1DA9850689F53400FABA2C /* MainMenu.nib */,
+				3FE1096D05DD9CFD0058FB86 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B79EF620AFFCD85000C5273 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B79EF630AFFCD85000C5273 /* Tableau_prefix.h in Headers */,
+				3B79EF640AFFCD85000C5273 /* TransformPane.h in Headers */,
+				3B79EF650AFFCD85000C5273 /* AlphaFilters.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFB048D05EA6F60008B1895 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F83A4B3067F3CDB0000C24B /* Tableau_prefix.h in Headers */,
+				3F9792ED0872078A00784EF8 /* TransformPane.h in Headers */,
+				3F9DCE53089E9E8600C967A2 /* AlphaFilters.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B79EF610AFFCD85000C5273 /* Tableau (64-bit) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B79EF840AFFCD85000C5273 /* Build configuration list for PBXNativeTarget "Tableau (64-bit)" */;
+			buildPhases = (
+				3B79EF620AFFCD85000C5273 /* Headers */,
+				3B79EF660AFFCD85000C5273 /* Resources */,
+				3B79EF6A0AFFCD85000C5273 /* Sources */,
+				3B79EF820AFFCD85000C5273 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			comments = "\nNote that the header and framework linkage here is nonstandard. Internally, we use this app to test our internal builds, which we put in in a standaside location (/Library/Frameworks) so we can test a test build of vImage without perturbing the system version.  The project file is configured to link to and use the headers from the vImage (if any) in /Library/Frameworks, if there is one, and use the one in the system Accelerate.framework otherwise.   We add a lot of funky magic to the build settings here to accomplish that. You don't need any of it.\n\nYour app should not take that path. What YOU should do, if you want to use vImage, is simply link to Accelerate.framework:\n\n\tSelect Project->Add To Project...\n\tSelect /System/Library/Frameworks/Accelerate.framework in the Open pane\n\tClick the  Add button\n\t\tConfigure which targets to add Accelerate.framework as desired\n\nor, from the command line:\n\n\tgcc -framework Accelerate  myfile.c\n\n   ";
+			dependencies = (
+			);
+			name = "Tableau (64-bit)";
+			productName = Tableau;
+			productReference = 3B79EF880AFFCD85000C5273 /* Tableau64.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FFB049105EA6F60008B1895 /* Tableau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2853AD0842952B009B6DA1 /* Build configuration list for PBXNativeTarget "Tableau" */;
+			buildPhases = (
+				3FFB048D05EA6F60008B1895 /* Headers */,
+				3FFB048E05EA6F60008B1895 /* Resources */,
+				3FFB048F05EA6F60008B1895 /* Sources */,
+				3FFB049005EA6F60008B1895 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			comments = "\nNote that the header and framework linkage here is nonstandard. Internally, we use this app to test our internal builds, which we put in in a standaside location (/Library/Frameworks) so we can test a test build of vImage without perturbing the system version.  The project file is configured to link to and use the headers from the vImage (if any) in /Library/Frameworks, if there is one, and use the one in the system Accelerate.framework otherwise.   We add a lot of funky magic to the build settings here to accomplish that. You don't need any of it.\n\nYour app should not take that path. What YOU should do, if you want to use vImage, is simply link to Accelerate.framework:\n\n\tSelect Project->Add To Project...\n\tSelect /System/Library/Frameworks/Accelerate.framework in the Open pane\n\tClick the  Add button\n\t\tConfigure which targets to add Accelerate.framework as desired\n\nor, from the command line:\n\n\tgcc -framework Accelerate  myfile.c\n\n   ";
+			dependencies = (
+			);
+			name = Tableau;
+			productName = Tableau;
+			productReference = 3FFB049205EA6F60008B1895 /* Tableau.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3F2853B10842952B009B6DA1 /* Build configuration list for PBXProject "Tableau" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Tableau2 */;
+			projectDirPath = "";
+			projectRoot = "";
+			shouldCheckCompatibility = 1;
+			targets = (
+				3B79EF8F0AFFCDD6000C5273 /* Build All */,
+				3FFB049105EA6F60008B1895 /* Tableau */,
+				3B79EF610AFFCD85000C5273 /* Tableau (64-bit) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B79EF660AFFCD85000C5273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B79EF8B0AFFCDAC000C5273 /* Tableau-Info (64-bit).plist in Resources */,
+				3B79EF680AFFCD85000C5273 /* MainMenu.nib in Resources */,
+				3B79EF690AFFCD85000C5273 /* ViewWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFB048E05EA6F60008B1895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB1B3BB05EFBEAE00C55A88 /* Tableau-Info.plist in Resources */,
+				3F1DA9870689F53400FABA2C /* MainMenu.nib in Resources */,
+				84F073C707B4657400AE924D /* ViewWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B79EF6A0AFFCD85000C5273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B79EF6B0AFFCD85000C5273 /* main.m in Sources */,
+				3B79EF6C0AFFCD85000C5273 /* ConvolutionFilters.m in Sources */,
+				3B79EF6D0AFFCD85000C5273 /* Filters.m in Sources */,
+				3B79EF6E0AFFCD85000C5273 /* FunctionMenu.m in Sources */,
+				3B79EF6F0AFFCD85000C5273 /* FunctionPane.m in Sources */,
+				3B79EF700AFFCD85000C5273 /* GeometryFilters.m in Sources */,
+				3B79EF710AFFCD85000C5273 /* GeometryPane.m in Sources */,
+				3B79EF720AFFCD85000C5273 /* HistogramFilters.m in Sources */,
+				3B79EF730AFFCD85000C5273 /* Kernel.m in Sources */,
+				3B79EF740AFFCD85000C5273 /* KernelPane.m in Sources */,
+				3B79EF750AFFCD85000C5273 /* MiscFilters.m in Sources */,
+				3B79EF760AFFCD85000C5273 /* MorphologyFilters.m in Sources */,
+				3B79EF770AFFCD85000C5273 /* HSBPane.m in Sources */,
+				3B79EF780AFFCD85000C5273 /* ParamsController.m in Sources */,
+				3B79EF790AFFCD85000C5273 /* RichardsonLucy.m in Sources */,
+				3B79EF7A0AFFCD85000C5273 /* ViewController.m in Sources */,
+				3B79EF7B0AFFCD85000C5273 /* ImageController.m in Sources */,
+				3B79EF7C0AFFCD85000C5273 /* TimingTest.m in Sources */,
+				3B79EF7D0AFFCD85000C5273 /* FilterTest.m in Sources */,
+				3B79EF7E0AFFCD85000C5273 /* ConversionFilters.m in Sources */,
+				3B79EF7F0AFFCD85000C5273 /* AlphaPane.m in Sources */,
+				3B79EF800AFFCD85000C5273 /* TransformPane.m in Sources */,
+				3B79EF810AFFCD85000C5273 /* AlphaFilters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FFB048F05EA6F60008B1895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB1B3A205EFBE3400C55A88 /* main.m in Sources */,
+				3FB1B3AA05EFBE5C00C55A88 /* ConvolutionFilters.m in Sources */,
+				3FB1B3AD05EFBE7200C55A88 /* Filters.m in Sources */,
+				3FB1B3B005EFBE8500C55A88 /* FunctionMenu.m in Sources */,
+				3FB1B3B105EFBE8900C55A88 /* FunctionPane.m in Sources */,
+				3FB1B3B205EFBE8A00C55A88 /* GeometryFilters.m in Sources */,
+				3FB1B3B305EFBE8D00C55A88 /* GeometryPane.m in Sources */,
+				3FB1B3B405EFBE9100C55A88 /* HistogramFilters.m in Sources */,
+				3FB1B3B605EFBE9600C55A88 /* Kernel.m in Sources */,
+				3FB1B3B705EFBE9900C55A88 /* KernelPane.m in Sources */,
+				3FB1B3B805EFBEA100C55A88 /* MiscFilters.m in Sources */,
+				3FB1B3B905EFBEA500C55A88 /* MorphologyFilters.m in Sources */,
+				3B90C1E106227A7B00C6DB46 /* HSBPane.m in Sources */,
+				3F86FB9D0712139900AA53B3 /* ParamsController.m in Sources */,
+				C426F424075BF99400D5AE11 /* RichardsonLucy.m in Sources */,
+				3F9B3B3507AB06F200962EBA /* ViewController.m in Sources */,
+				3F64FDD2080C7AD000F710EC /* ImageController.m in Sources */,
+				3F64FE51080DA56400F710EC /* TimingTest.m in Sources */,
+				3F34F71A081427B900EF7F28 /* FilterTest.m in Sources */,
+				3F3105B308479B6C00BEDBBD /* ConversionFilters.m in Sources */,
+				3FF473340854E5AE00D76278 /* AlphaPane.m in Sources */,
+				3F9792EE0872078A00784EF8 /* TransformPane.m in Sources */,
+				3F9DCE54089E9E8600C967A2 /* AlphaFilters.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B79EF910AFFCDE2000C5273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FFB049105EA6F60008B1895 /* Tableau */;
+			targetProxy = 3B79EF900AFFCDE2000C5273 /* PBXContainerItemProxy */;
+		};
+		3B79EF930AFFCDE6000C5273 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B79EF610AFFCD85000C5273 /* Tableau (64-bit) */;
+			targetProxy = 3B79EF920AFFCDE6000C5273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B1CC69B0B6942D80001529B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1CC69C0B6942D80001529B /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F1DA9850689F53400FABA2C /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1DA9860689F53400FABA2C /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		84F073C507B4657400AE924D /* ViewWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F073C607B4657400AE924D /* English */,
+			);
+			name = ViewWindow.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B79EF850AFFCD85000C5273 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc64,
+					x86_64,
+				);
+				INFOPLIST_FILE = "Tableau-Info (64-bit).plist";
+				PRODUCT_NAME = Tableau64;
+				RC_VALID_ARCHS = "ppc64 x86_64";
+				VALID_ARCHS = "ppc64 x86_64";
+			};
+			name = Development;
+		};
+		3B79EF860AFFCD85000C5273 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				INFOPLIST_FILE = "Tableau-Info (64-bit).plist";
+				PRODUCT_NAME = Tableau;
+				RC_VALID_ARCHS = "ppc64 x86_64";
+				VALID_ARCHS = "ppc64 x86_64";
+			};
+			name = Deployment;
+		};
+		3B79EF870AFFCD85000C5273 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc64,
+				);
+				INFOPLIST_FILE = "Tableau-Info (64-bit).plist";
+				PRODUCT_NAME = Tableau64;
+				RC_VALID_ARCHS = "ppc64 x86_64";
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = "x86_64 ppc64";
+			};
+			name = Default;
+		};
+		3B79EF9A0AFFCE4B000C5273 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build All";
+			};
+			name = Development;
+		};
+		3B79EF9B0AFFCE4B000C5273 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "Build All";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		3B79EF9C0AFFCE4B000C5273 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Build All";
+			};
+			name = Default;
+		};
+		3F2853AE0842952B009B6DA1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				PRODUCT_NAME = Tableau;
+				RC_VALID_ARCHS = "ppc i386";
+				VALID_ARCHS = "i386 ppc";
+			};
+			name = Development;
+		};
+		3F2853AF0842952B009B6DA1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				PRODUCT_NAME = Tableau;
+				RC_VALID_ARCHS = "ppc i386";
+				VALID_ARCHS = "i386 ppc";
+			};
+			name = Deployment;
+		};
+		3F2853B00842952B009B6DA1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				PRODUCT_NAME = Tableau;
+				RC_VALID_ARCHS = "ppc i386";
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = "i386 ppc";
+			};
+			name = Default;
+		};
+		3F2853B20842952B009B6DA1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)",
+					"$(VIMAGE_PATH_SYSTEM)",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = Source/Tableau_prefix.h;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)/vImage.framework/Headers",
+					"$(VIMAGE_PATH_SYSTEM)/vImage.framework/Headers",
+				);
+				INFOPLIST_FILE = "Tableau-Info.plist";
+				INSTALL_PATH = /Developer/Examples/Accelerate/vImage/Tableau;
+				OTHER_LDFLAGS = (
+					"-bind_at_load",
+					"-framework",
+					vImage,
+				);
+				PREBINDING = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VIMAGE_PATH_BUILT = /Library/Frameworks;
+				VIMAGE_PATH_SYSTEM = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks;
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Development;
+		};
+		3F2853B30842952B009B6DA1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)",
+					"$(VIMAGE_PATH_SYSTEM)",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREFIX_HEADER = Source/Tableau_prefix.h;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)/vImage.framework/Headers",
+					"$(VIMAGE_PATH_SYSTEM)/vImage.framework/Headers",
+				);
+				INFOPLIST_FILE = "Tableau-Info.plist";
+				INSTALL_PATH = /Developer/Examples/Accelerate/vImage/Tableau;
+				OTHER_LDFLAGS = (
+					"-bind_at_load",
+					"-framework",
+					vImage,
+				);
+				PREBINDING = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VIMAGE_PATH_BUILT = /Library/Frameworks;
+				VIMAGE_PATH_SYSTEM = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks;
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Deployment;
+		};
+		3F2853B40842952B009B6DA1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)",
+					"$(VIMAGE_PATH_SYSTEM)",
+				);
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREFIX_HEADER = Source/Tableau_prefix.h;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(VIMAGE_PATH_BUILT)/vImage.framework/Headers",
+					"$(VIMAGE_PATH_SYSTEM)/vImage.framework/Headers",
+				);
+				INFOPLIST_FILE = "Tableau-Info.plist";
+				INSTALL_PATH = /Developer/Examples/Accelerate/vImage/Tableau;
+				OTHER_LDFLAGS = (
+					"-bind_at_load",
+					"-framework",
+					vImage,
+				);
+				PREBINDING = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+				VIMAGE_PATH_BUILT = /Library/Frameworks;
+				VIMAGE_PATH_SYSTEM = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks;
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B79EF840AFFCD85000C5273 /* Build configuration list for PBXNativeTarget "Tableau (64-bit)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B79EF850AFFCD85000C5273 /* Development */,
+				3B79EF860AFFCD85000C5273 /* Deployment */,
+				3B79EF870AFFCD85000C5273 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3B79EF990AFFCE4B000C5273 /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B79EF9A0AFFCE4B000C5273 /* Development */,
+				3B79EF9B0AFFCE4B000C5273 /* Deployment */,
+				3B79EF9C0AFFCE4B000C5273 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3F2853AD0842952B009B6DA1 /* Build configuration list for PBXNativeTarget "Tableau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2853AE0842952B009B6DA1 /* Development */,
+				3F2853AF0842952B009B6DA1 /* Deployment */,
+				3F2853B00842952B009B6DA1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3F2853B10842952B009B6DA1 /* Build configuration list for PBXProject "Tableau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2853B20842952B009B6DA1 /* Development */,
+				3F2853B30842952B009B6DA1 /* Deployment */,
+				3F2853B40842952B009B6DA1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

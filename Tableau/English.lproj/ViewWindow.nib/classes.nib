@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {saveImage = id; }; 
+            CLASS = ViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                imageSizeDisplayField = NSTextField; 
+                imageView = NSImageView; 
+                infoDisplayField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
